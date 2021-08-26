@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Converter Online</title>
+</head>
+
+<body>
+<div class="container">
+<h1 style="text-align:center">Online Convertor</h1>
+<div class="converter">
+<form validate autocomplete="off">
+  <lable for="number"><p style="text-align:center;font-size:22px;">Fahrenheit to Celcius</p></lable>
+  <input type="number" id="number" name="number" placeholder="Type any number..." oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+</form>
+
+<br>
+
+<p id="demo"></p>
+</div>
+
+<br>
+
+<div class="converter">
+<form validate autocomplete="off">
+  <lable for="number"><p style="text-align:center;font-size:22px;">Mile to Kilometre</p></lable>
+  <input type="number" id="number" name="number" placeholder="Type any number..." oninput="milesConverter(this.value)" onchange="milesConverter(this.value)">
+</form>
+
+<br>
+
+<p id="mile"></p>
+</div>
+
+<br>
+
+<div class="converter">
+<form validate autocomplete="off">
+  <lable for="number"><p style="text-align:center;font-size:22px;">USD to GEL</p></lable>
+  <input type="number" id="number" name="number" placeholder="Type any number..." oninput="moneyConverter(this.value)" onchange="moneyConverter(this.value)">
+</form>
+
+<br>
+
+<p id="money"></p>
+</div>
+</div>
+
+
+<script src="myFirst.js"></script>
+
+</body>
+</html>

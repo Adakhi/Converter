@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.container {
+  background-color: #334646;
+  margin: auto;
+  width: 70%;
+  border: 1px solid #334646;
+  border-radius: 10px;
+  position: relative;
+  bottom: -50px; 
+  padding: 30px;
+}
+ 
+.converter {
+  background-color: #a1b3af;
+  margin: auto;
+  width: 100%;
+  border: 1px solid #a1b3af;
+  border-radius: 10px;
+  position: relative;
+  padding: 10px;  
+}
+
+input[type=number] {
+  width: 100%;
+  display: inline-block;
+  padding: 8px;
+  border: 1px solid #334646;
+  border-radius: 10px;  
+}
+
+input:focus {
+  background-color: lightblue;
+  outline: none;
+}
+ 
+p {
+  font-size: 20px;
+}
+
+#demo,#mile,#money {
+  width: 25%;
+  margin: auto;
+  background-color: white;
+  border: 1px solid #a1b3af;
+  border-radius: 10px;
+  display: block;
+  text-align: center; 
+}
+    
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #demo,#mile,#money {
+    width: 50%;
+  }
+}
