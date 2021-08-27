@@ -45,7 +45,7 @@ p {
 }
 
 #demo,#mile,#money {
-  width: 25%;
+  width: 50%;
   margin: auto;
   background-color: #fff;
   border: 1px solid #a1b3af;

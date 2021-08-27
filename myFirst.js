@@ -1,6 +1,6 @@
 function temperatureConverter(valNum) {
   valNum = parseFloat(valNum);
-  document.getElementById("demo").innerHTML= "C" + (valNum-32)*5/9 + "&deg";
+  document.getElementById("demo").innerHTML= (valNum-32)*5/9 + "C" + "&deg";
 }
 
 function milesConverter(valNum) {
