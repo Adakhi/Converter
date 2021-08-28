@@ -31,7 +31,11 @@ p::before {
 <div class="converter">
 <form validate autocomplete="off">
   <lable for="number"><p style="text-align:center;font-size:22px;">Fahrenheit to Celcius</p></lable>
-  <input type="number" id="number" name="number" placeholder="Type any number..." oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+  <input type="range" min="0" max="100" step="1" value="0" id="number" name="number" oninput="showAmount(this.value)" onchange="temperatureConverter(this.value)">
+  <div class="numbercenter">
+  <span id="amount">100</span>
+  </div>
+  </lable>
 </form>
 
 <br>
@@ -43,11 +47,16 @@ p::before {
 
 <div class="converter">
 <form validate autocomplete="off">
-  <lable for="number"><p style="text-align:center;font-size:22px;">Mile to Kilometre</p></lable>
-  <input type="number" id="number" name="number" placeholder="Type any number..." oninput="milesConverter(this.value)" onchange="milesConverter(this.value)">
+  <lable for="number"><p style="text-align:center;font-size:22px;">Mile to Kilometre</p>
+  <input type="range" min="0" max="500" step="5" value="0" id="number" name="number" oninput="showAmount1(this.value)" onchange="milesConverter(this.value)">
+  <div class="numbercenter">
+  <span id="amount1">100</span>
+  </div>
+  </lable>
 </form>
 
 <br>
+
 
 <p id="mile">reslut will shown here</p>
 </div>
