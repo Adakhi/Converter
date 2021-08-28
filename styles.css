@@ -6,7 +6,8 @@
 .topnavbar {
   overflow: hidden;
   background-color: #99ffeb;
-  position: static;
+  position: -webkit-sticky; /* for Safari browser */
+  position: sticky;
   top: 0;
 }
 .topnavbar a {
@@ -39,7 +40,7 @@ body {
   width: 70%;
   border: 1px solid #334646;
   border-radius: 10px;
-  position: relative;
+  position: static;
   bottom: -50px; 
   padding: 30px;
 }
@@ -50,7 +51,7 @@ body {
   width: 100%;
   border: 1px solid #a1b3af;
   border-radius: 10px;
-  position: relative;
+  position: static;
   padding: 10px;  
 }
 
@@ -113,6 +114,12 @@ p {
   .topnavbar a {
     float: none;
     width: 100%;
+  }
+}
+/* Responsive layout - when the screen is less than 768px wide, make the navigation static */
+@media screen and (max-width: 768px) {
+  .topnavbar {
+    position: static;
   }
 }
 
