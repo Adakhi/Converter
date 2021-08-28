@@ -2,14 +2,14 @@ function showAmount(valNum,newAmount) {
   valNum = parseFloat(valNum);
   newAmount = parseFloat(valNum);
   document.getElementById("demo").innerHTML= (valNum-32)*5/9 + "C" + "&deg";
-  document.getElementById("amount").innerHTML = newAmount;
+  document.getElementById("amount").innerHTML = newAmount + "&deg" + "F";
 }
 
 function showAmount1(valNum,newAmount) {
   valNum = parseFloat(valNum);
   newAmount = parseFloat(valNum);
   document.getElementById("mile").innerHTML= valNum * 1.609344 + " " + "Km";
-  document.getElementById("amount1").innerHTML = newAmount;
+  document.getElementById("amount1").innerHTML = newAmount + "ml";
 }
 
 function moneyConverter(valNum) {
