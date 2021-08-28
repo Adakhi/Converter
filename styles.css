@@ -2,8 +2,36 @@
   box-sizing: border-box;
 }
 
+.material-icons.md-16 { font-size: 16px; }
+.topnavbar {
+  overflow: hidden;
+  background-color: #99ffeb;
+  position: -webkit-sticky; /* for Safari browser */
+  position: sticky;
+  top: 0;
+}
+.topnavbar a {
+  float: left;
+  display: block;
+  text-decoration: none;
+  color: #000;
+  padding: 25px 20px;
+  text-align: center;
+  overflow: hidden;
+}
+.topnavbar a:hover {
+  cursor: pointer;
+  background-color: #00b38f;
+  color: white;
+  display: block;
+  cursor: pointer;
+}
+
 body {
   background-color: black;
+  font-family: "Otomanopee One", Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
 }
 
 .container {
