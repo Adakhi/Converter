@@ -31,7 +31,7 @@ p::before {
 <div class="converter">
 <form validate autocomplete="off">
   <lable for="number"><p style="text-align:center;font-size:22px;">Fahrenheit to Celcius</p></lable>
-  <input type="range" min="-300" max="300" step="1" value="0" id="number" name="number" oninput="showAmount(this.value)" onchange="temperatureConverter(this.value)">
+  <input type="range" min="-300" max="300" step="1" value="0" id="rangeInput" name="number" oninput="showAmount(this.value)" onchange="temperatureConverter(this.value)">
   <input type="number" id="number" name="number" placeholder="Type any number..." oninput="showAmount(this.value)" onchange="temperatureConverter(this.value)">
   <div class="numbercenter">
   <span id="amount">0&deg</span>

@@ -3,6 +3,7 @@ function showAmount(valNum,newAmount) {
   newAmount = parseFloat(valNum);
   document.getElementById("demo").innerHTML= (valNum-32)*5/9 + "C" + "&deg";
   document.getElementById("amount").innerHTML = newAmount + "&deg" + "F";
+  document.getElementById("number").innerHTML= (valNum-32)*5/9 + "C" + "&deg";
 }
 
 function showAmount1(valNum,newAmount) {
